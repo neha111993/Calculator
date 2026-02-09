@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #394a51;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    height: 280px;
+}
+.calculator{
+    background-color:#7fa99b;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(211, 6, 108);
+}
+
+.output input{
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(206, 238, 230);
+    color:rgb(0, 4, 255) ;
+    box-shadow: inset 0px 4px 5px lightgrey,
+                inset 0px -4px 5px lightgrey;
+}
+input{
+    font-size: large;
+    text-align: right;
+}
+#english{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 1em;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+#english button{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(144, 247, 238, 0.918);
+    border: none;
+    font-weight: 400;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 2px 5px 5px grey;
+}
+#english button:nth-child(1){
+    background-color: rgba(255,0,0,0.2);
+    color: red;
+}
+#english button:nth-child(2),
+#english button:nth-child(3),
+#english button:nth-child(4),
+#english button:nth-child(8),
+#english button:nth-child(12),
+#english button:nth-child(16),
+#english button:nth-child(20){
+    background-color: rgba(0, 4, 255, 0.2);
+    color: rgba(0, 4, 255);
+}
+#english button:nth-child(19){
+    background-color: rgb(0, 4, 255);
+    color: white;
+}
+#english button:active{
+    transform: scale(1.5);
+    border: 2px solid green;
+}
+#hindi{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 1em;
+    margin-bottom: 20px;
+}
+#hindi button{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(144, 247, 238, 0.918);
+    border: none;
+    font-weight: 400;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 2px 5px 5px grey;
+}
+#hindi button:nth-child(1){
+    background-color: rgba(255,0,0,0.2);
+    color: red;
+}
+#hindi button:nth-child(2),
+#hindi button:nth-child(3),
+#hindi button:nth-child(4),
+#hindi button:nth-child(8),
+#hindi button:nth-child(12),
+#hindi button:nth-child(16),
+#hindi button:nth-child(20){
+    background-color: rgba(0, 4, 255, 0.2);
+    color: rgba(0, 4, 255);
+}
+#hindi button:nth-child(19){
+    background-color: rgb(0, 4, 255);
+    color: white;
+}
+#hindi button:active{
+    transform: scale(1.5);
+    border: 2px solid green;
+}
+
+.options{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn1{
+    width: 70px;
+    height: 40px;
+    background-color: rgb(0, 4, 255);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.options .active{
+    color:white;
+    background-color: #ff6f3c;
+} 
+.tab-content{
+    display: none;
+}
+.tab-content .active{
+    display:flex ;
+}
+
+.btn{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(0, 4, 255);
+    color: white;
+    border: none;
+    font-weight: 400;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 3px 8px 4px grey;
+}

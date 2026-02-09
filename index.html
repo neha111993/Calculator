@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>login</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">
+            <input type="text" id="display" disabled>
+            <div id="english" class="tab-content">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('*')">x</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('%')">%</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('00')">00</button>
+                <button onclick="calculate()" class="btn">=</button>
+                <button onclick="deleteLast()">del</button>
+            </div>
+            <div id="hindi" class="tab-content">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('*')">x</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('७')">७</button>
+                <button onclick="appendToDisplay('८')">८</button>
+                <button onclick="appendToDisplay('९')">९</button>
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('४')">४</button>
+                <button onclick="appendToDisplay('५')">५</button>
+                <button onclick="appendToDisplay('६')">६</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="appendToDisplay('१')">१</button>
+                <button onclick="appendToDisplay('२')">२</button>
+                <button onclick="appendToDisplay('३')">३</button>
+                <button onclick="appendToDisplay('%')">%</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('00')">00</button>
+                <button onclick="calculate()" class="btn">=</button>
+                <button onclick="deleteLast()">del</button>
+            </div>
+        </div>
+        <div class="options">
+            <button type="submit" class="btn1 active" onclick="openTab(event,'normal')">Normal</button>
+            <button type="submit" class="btn1" onclick="openTab(event,'hindi')">Hindi</button>
+            <button type="submit" class="btn1" onclick="openTab(event,'english')">English</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
